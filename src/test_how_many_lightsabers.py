@@ -1,5 +1,7 @@
 """Testing solutions for CodeWars Problem howManyLighSabers()."""
 
+import pytest
+
 # These are the tests from code wars
 
 # test.assert_equals(howManyLightsabersDoYouOwn("Zach"), 18)
@@ -9,20 +11,15 @@
 
 # These are my own tests
 
+TEST_TABLE = [
+    ["", 0],
+    ["Bill", 0],
+    ["Zach", 18],
+]
 
-def test_how_many_lightsabers_empty():
+
+@pytest.mark.parametrize("string, result", TEST_TABLE)
+def test_how_many_lightsabers_empty(string, result):
     """Return 0 if emptyString is passed."""
     from how_many_lightsabers import how_many_lightsabers_do_you_own
-    assert how_many_lightsabers_do_you_own("") == 0
-
-
-def test_how_many_lightsabers_not_zach():
-    """Return 0 if any name other than Zach is passed."""
-    from how_many_lightsabers import how_many_lightsabers_do_you_own
-    assert how_many_lightsabers_do_you_own("Bill") == 0
-
-
-def test_how_many_lightsabers_zach():
-    """Return 18 if Zach is passed."""
-    from how_many_lightsabers import how_many_lightsabers_do_you_own
-    assert how_many_lightsabers_do_you_own("Zach") == 18
+    assert how_many_lightsabers_do_you_own(string) == result

@@ -12,7 +12,6 @@ FRIEND_TABLE = [
     [["Ryan", "Kieran", "Mark"], ["Ryan", "Mark"]],
     [["Billy", "Kieran", "Markus"], []],
     [["Bill", "Marc", "Mark", "Paul"], ["Bill", "Marc", "Mark", "Paul"]],
-
 ]
 
 

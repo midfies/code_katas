@@ -20,7 +20,6 @@ PATTERN_TABLE = [
     [['war', 'rad', 'dad'], "*a*"],
     [['general', 'admiral', 'piglets', 'secrets'], "*******"],
     [['family'], "family"],
-
 ]
 
 

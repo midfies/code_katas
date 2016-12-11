@@ -15,7 +15,6 @@ SUM_STRING_TABLE = [
     ["1+1=2", 4],
     ["e=mc^2", 2],
     ["There are no numbers in this string", 0],
-
 ]
 
 

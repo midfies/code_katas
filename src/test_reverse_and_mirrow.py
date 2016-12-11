@@ -1,5 +1,7 @@
 """Testing solutions for CodeWars Problem reverse and mirror."""
 
+import pytest
+
 # These are the tests from code wars
 
 # s1, s2 ="FizZ", "buZZ"
@@ -11,13 +13,14 @@
 
 # These are my own tests
 
-def test_reverse_and_mirror_single():
-    """Return strings with swapped cases. 1 reversed, the other mirrored."""
-    from reverse_and_mirror import reverse_and_mirror
-    assert reverse_and_mirror("FizZ", "buZZ") == "zzUB@@@zZIffIZz"
+TEST_TABLE = [
+    ["FizZ", "buZZ", "zzUB@@@zZIffIZz"],
+    ["String Reversing", "Changing Case", "ESAc GNIGNAHc@@@GNISREVEr GNIRTssTRING rEVERSING"],
+]
 
 
-def test_reverse_and_mirror_multiple():
+@pytest.mark.parametrize("first, second, result", TEST_TABLE)
+def test_reverse_and_mirror(first, second, result):
     """Return strings with swapped cases. 1 reversed, the other mirrored."""
     from reverse_and_mirror import reverse_and_mirror
-    assert reverse_and_mirror("String Reversing", "Changing Case") == "ESAc GNIGNAHc@@@GNISREVEr GNIRTssTRING rEVERSING"
+    assert reverse_and_mirror(first, second) == result

@@ -1,4 +1,4 @@
-"""Codewars problem Crazed Templating. Mstching letters in same length words."""
+"""Codewars problem Crazed Templating. Matching letters in same length words."""
 
 
 def letter_pattern(words):

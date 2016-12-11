@@ -15,5 +15,4 @@ setup(
     extras_require={
         "test": ['tox', 'pytest', 'pytest-watch', 'pytest-cov']
     },
-    entry_points={},
 )
