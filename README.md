@@ -57,3 +57,10 @@ Code Katas from CodeWars.com
     - Link : https://www.codewars.com/kata/reviews/55b425fc22aedc79cc00008c/groups/55b5728df69de767b900014a
     - Kyu Level : 7th - 16 Total Points!!
 
+9. 
+    Sum of the First Nth terms of a Series
+    - Module : sum_of_nth.py
+    - Tests : test_sum_of_nth.py
+    - Link : https://www.codewars.com/kata/reviews/55743cc6e115ab939500000c/groups/584a154c4b1d12efb500002d
+    - Kyu Level : 7th
+
