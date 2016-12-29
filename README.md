@@ -73,3 +73,10 @@ Code Katas from CodeWars.com
     - Best Solution Link : https://www.codewars.com/kata/reviews/55743cc6e115ab939500000c/groups/584a154c4b1d12efb500002d
     - Kyu Level : 7th
 
+10. 
+    Sort deck of cards
+    - Module : sort_deck.py
+    - Tests : test_sort_deck.py
+    - Link : 
+    - Best Soultion :
+    - Kyu Level : 7th
